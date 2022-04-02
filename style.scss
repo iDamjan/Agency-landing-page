@@ -1,0 +1,73 @@
+// Variables
+$fontFraunces: "Fraunces", serif;
+$fontBarlow: "Barlow", sans-serif;
+// Colors
+$desaturatedCyan: hsl(167, 40%, 24%); // Graphic design text
+$darkBlue: hsl(198, 62%, 26%); // Photography text
+$moderateCyan: hsl(168, 34%, 41%); // Footer
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$white: white;
+
+
+// Functions
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.navbar_mobile {
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  .navbar_items {
+    @include flex(space-between, center);
+    .hamburger {
+      margin-right: 3rem;
+    }
+  }
+}
+
+.header {
+  @include flexCenter();
+  .image_header {
+    width: 100%;
+  }
+  .header_text {
+    max-width: 31.5rem;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: 2%;
+    h1 {
+      max-width: 31.5rem;
+      font-size: 3.5rem;
+      font-family: $fontFraunces;
+      text-align: center;
+      color: white;
+      letter-spacing: 0.8rem;
+      margin-bottom: 5rem;
+    }
+    img {
+      width: 3.2rem;
+    }
+  }
+}
