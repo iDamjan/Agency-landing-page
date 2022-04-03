@@ -65,7 +65,7 @@ body {
 
 .header .header_text h1 {
   max-width: 31.5rem;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-family: "Fraunces", serif;
   text-align: center;
   color: white;
@@ -74,6 +74,362 @@ body {
 }
 
 .header .header_text img {
-  width: 3.2rem;
+  max-width: 3.2rem;
+}
+
+.main_content .transform_brand img {
+  max-width: 100%;
+}
+
+.main_content .transform_brand .transform_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4.3rem 1.8rem;
+}
+
+.main_content .transform_brand h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #23303e;
+}
+
+.main_content .transform_brand p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.main_content .transform_brand h3 {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  text-transform: uppercase;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  font-size: 1rem;
+}
+
+.main_content .transform_brand h3::after {
+  content: " ";
+  position: absolute;
+  background-color: #fad400;
+  width: 115px;
+  height: 10px;
+  left: 0;
+  top: 70%;
+  border-radius: 15px;
+  z-index: 0;
+  opacity: 40%;
+}
+
+.main_content .stand_out img {
+  max-width: 100%;
+}
+
+.main_content .stand_out .stand_out_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4.3rem 1.8rem;
+}
+
+.main_content .stand_out h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #23303e;
+}
+
+.main_content .stand_out p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.main_content .stand_out h3 {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  text-transform: uppercase;
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  font-size: 1rem;
+}
+
+.main_content .stand_out h3::after {
+  content: " ";
+  position: absolute;
+  background-color: #fe7867;
+  width: 115px;
+  height: 10px;
+  left: 0;
+  top: 70%;
+  border-radius: 15px;
+  z-index: 0;
+  opacity: 40%;
+}
+
+.main_content .graphic_design {
+  position: relative;
+}
+
+.main_content .graphic_design img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main_content .graphic_design .graphic_design_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4.3rem 1.8rem;
+  position: absolute;
+  top: 50%;
+}
+
+.main_content .graphic_design h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #25564b;
+}
+
+.main_content .graphic_design p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  color: #25564b;
+}
+
+.main_content .photography {
+  position: relative;
+}
+
+.main_content .photography img {
+  max-width: 100%;
+}
+
+.main_content .photography .photography_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4.3rem 1.8rem;
+  position: absolute;
+  top: 50%;
+}
+
+.main_content .photography h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #19536b;
+}
+
+.main_content .photography p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  color: #19536b;
+}
+
+.main_content .client_testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_content .client_testimonials h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #a7abae;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-top: 3.5rem;
+  margin-bottom: 2.1rem;
+  font-weight: bolder;
+}
+
+.main_content .client_testimonials div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 30px;
+}
+
+.main_content .client_testimonials div img {
+  max-width: 74px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.main_content .client_testimonials div p {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.main_content .client_testimonials div h3 {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #23303e;
+  font-weight: 900;
+  margin-bottom: 0.6rem;
+}
+
+.main_content .client_testimonials div h4 {
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  font-weight: 600;
+  margin-top: 0rem;
+}
+
+.main_content .images_group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (12fr)[2];
+      grid-template-columns: repeat(2, 12fr);
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  margin-top: 1.3rem;
+}
+
+.main_content .images_group img {
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #6bd1bd;
+  padding: 71px 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .logo_footer {
+  margin-bottom: 80px;
+  width: 13rem;
+}
+
+.footer .footer_content {
+  margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_content a {
+  text-decoration: none;
+  color: #25564b;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  opacity: 50%;
+}
+
+.footer .social_media_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.footer .social_media_icons img {
+  width: 25px;
 }
 /*# sourceMappingURL=style.css.map */

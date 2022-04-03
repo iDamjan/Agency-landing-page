@@ -4,12 +4,14 @@ $fontBarlow: "Barlow", sans-serif;
 // Colors
 $desaturatedCyan: hsl(167, 40%, 24%); // Graphic design text
 $darkBlue: hsl(198, 62%, 26%); // Photography text
-$moderateCyan: hsl(168, 34%, 41%); // Footer
+$moderateCyan: hsl(168, 53%, 62%); // Footer
 $softRed: hsl(7, 99%, 70%);
 $yellow: hsl(51, 100%, 49%);
 $white: white;
-
-
+$veryDarkBlue: hsl(213, 9%, 39%);
+$grayishBlue: hsl(210, 4%, 67%);
+$veryDarkdesaturatedBlue: hsl(212, 27%, 19%);
+$darkGray: hsl(232, 10%, 55%);
 // Functions
 @mixin flexCenter {
   display: flex;
@@ -21,7 +23,14 @@ $white: white;
   justify-content: $justify;
   align-items: $align;
 }
-
+@mixin paragraphStyle() {
+  text-align: center;
+  font-family: $fontBarlow;
+  color: $darkGray;
+  font-weight: 600;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
 html {
   margin: 0;
   padding: 0;
@@ -32,6 +41,9 @@ body {
   padding: 0;
   position: relative;
 }
+
+//NAVBAR-------------------------
+//---------------------------NAVBAR
 
 .navbar_mobile {
   padding: 20px;
@@ -44,7 +56,11 @@ body {
     }
   }
 }
+//NAVBAR-------------------------
+//---------------------------NAVBAR
 
+//HEADER---------------------
+// ---------------------HEADER
 .header {
   @include flexCenter();
   .image_header {
@@ -59,7 +75,7 @@ body {
     top: 2%;
     h1 {
       max-width: 31.5rem;
-      font-size: 3.5rem;
+      font-size: 3.2rem;
       font-family: $fontFraunces;
       text-align: center;
       color: white;
@@ -67,7 +83,242 @@ body {
       margin-bottom: 5rem;
     }
     img {
-      width: 3.2rem;
+      max-width: 3.2rem;
+    }
+  }
+}
+//HEADER---------------------
+// ---------------------HEADER
+
+//MAIN CONTENT----------------
+//-----------------MAIN CONTENT
+
+.main_content {
+  .transform_brand {
+    img {
+      max-width: 100%;
+    }
+    .transform_text {
+      @include flexCenter();
+      flex-direction: column;
+      padding: 4.3rem 1.8rem;
+    }
+    h2 {
+      font-family: $fontFraunces;
+      font-size: 2rem;
+      text-align: center;
+      color: $veryDarkdesaturatedBlue;
+    }
+    p {
+      @include paragraphStyle();
+    }
+    h3 {
+      font-family: $fontFraunces;
+      color: $veryDarkdesaturatedBlue;
+      text-transform: uppercase;
+      font-weight: 800;
+      position: relative;
+      z-index: 2;
+      font-size: 1rem;
+    }
+    h3::after {
+      content: " ";
+      position: absolute;
+      background-color: $yellow;
+      width: 115px;
+      height: 10px;
+      left: 0;
+      top: 70%;
+      border-radius: 15px;
+      z-index: 0;
+      opacity: 40%;
+    }
+  }
+  .stand_out {
+    img {
+      max-width: 100%;
+    }
+    .stand_out_text {
+      @include flexCenter();
+      flex-direction: column;
+      padding: 4.3rem 1.8rem;
+    }
+    h2 {
+      font-family: $fontFraunces;
+      font-size: 2rem;
+      text-align: center;
+      color: $veryDarkdesaturatedBlue;
+    }
+    p {
+      @include paragraphStyle();
+    }
+    h3 {
+      font-family: $fontFraunces;
+      color: $veryDarkdesaturatedBlue;
+      text-transform: uppercase;
+      font-weight: 800;
+      position: relative;
+      z-index: 2;
+      font-size: 1rem;
+    }
+    h3::after {
+      content: " ";
+      position: absolute;
+      background-color: $softRed;
+      width: 115px;
+      height: 10px;
+      left: 0;
+      top: 70%;
+      border-radius: 15px;
+      z-index: 0;
+      opacity: 40%;
+    }
+  }
+  .graphic_design {
+    position: relative;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .graphic_design_text {
+      @include flexCenter();
+      flex-direction: column;
+      padding: 4.3rem 1.8rem;
+      position: absolute;
+      top: 50%;
+    }
+    h2 {
+      font-family: $fontFraunces;
+      font-size: 2rem;
+      text-align: center;
+      color: $desaturatedCyan;
+    }
+    p {
+      @include paragraphStyle();
+      color: $desaturatedCyan;
+    }
+  }
+  .photography {
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+    .photography_text {
+      @include flexCenter();
+      flex-direction: column;
+      padding: 4.3rem 1.8rem;
+      position: absolute;
+      top: 50%;
+    }
+    h2 {
+      font-family: $fontFraunces;
+      font-size: 2rem;
+      text-align: center;
+      color: $darkBlue;
+    }
+    p {
+      @include paragraphStyle();
+      color: $darkBlue;
+    }
+  }
+
+  //CLIENT TESTIMONIALS..............
+  //...............CLIENT TESTIMONIALS
+
+  .client_testimonials {
+    h2 {
+      font-family: $fontFraunces;
+      font-size: 1.1rem;
+      text-align: center;
+      color: $grayishBlue;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      margin-top: 3.5rem;
+      margin-bottom: 2.1rem;
+      font-weight: bolder;
+    }
+
+    @include flexCenter();
+    flex-direction: column;
+    div {
+      @include flexCenter();
+      flex-direction: column;
+      padding: 40px 30px;
+      img {
+        max-width: 74px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+      p {
+        @include paragraphStyle();
+      }
+      h3 {
+        font-family: $fontFraunces;
+        font-size: 1.5rem;
+        text-align: center;
+        color: $veryDarkdesaturatedBlue;
+        font-weight: 900;
+        margin-bottom: 0.6rem;
+      }
+      h4 {
+        font-family: $fontBarlow;
+        color: $darkGray;
+        font-weight: 600;
+        margin-top: 0rem;
+      }
+    }
+  }
+
+  //CLIENT TESTIMONIALS..............
+  //...............CLIENT TESTIMONIALS
+
+  //IMAGES GROUP.................
+  //................IMAGES GROUP
+
+  .images_group {
+    display: grid;
+    grid-template-columns: repeat(2, 12fr);
+    grid-template-rows: auto auto;
+    margin-top: 1.3rem;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  //IMAGES GROUP.................
+  //................IMAGES GROUP
+}
+//FOOTER................
+//...............FOOTER
+.footer {
+  background-color: $moderateCyan;
+  padding: 71px 55px;
+  @include flexCenter();
+  flex-direction: column;
+  .logo_footer {
+    margin-bottom: 80px;
+    width: 13rem;
+  }
+  .footer_content {
+    margin-bottom: 80px;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: $desaturatedCyan;
+      font-family: $fontBarlow;
+      font-weight: 800;
+      font-size: 1.3rem;
+      opacity: 50%;
+    }
+  }
+  .social_media_icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    img {
+      width: 25px;
     }
   }
 }
