@@ -12,7 +12,6 @@ body {
 }
 
 .navbar_mobile {
-  padding: 20px;
   position: absolute;
   width: 100%;
 }
@@ -27,10 +26,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.navbar_mobile .navbar_items .hamburger {
-  margin-right: 3rem;
+  padding: 20px;
 }
 
 .header {
@@ -45,12 +41,13 @@ body {
           align-items: center;
 }
 
-.header .image_header {
+.header .image_header_mobile {
   width: 100%;
 }
 
 .header .header_text {
   max-width: 31.5rem;
+  width: 100%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,13 +61,15 @@ body {
 }
 
 .header .header_text h1 {
-  max-width: 31.5rem;
-  font-size: 3.2rem;
+  max-width: 50rem;
+  width: 100%;
+  font-size: 2.7rem;
+  padding: 2rem;
   font-family: "Fraunces", serif;
   text-align: center;
   color: white;
   letter-spacing: 0.8rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .header .header_text img {
@@ -431,5 +430,95 @@ body {
 
 .footer .social_media_icons img {
   width: 25px;
+}
+
+.navbar_desktop {
+  display: none;
+}
+
+.image_header_desktop {
+  display: none;
+}
+
+@media (min-width: 60em) {
+  .navbar_desktop {
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  .navbar_desktop .navbar_items_desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem;
+  }
+  .navbar_desktop .navbar_items_desktop .nav_content {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 3rem;
+    margin-right: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar_desktop .navbar_items_desktop .nav_content a {
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+    color: white;
+    font-weight: 600;
+  }
+  .navbar_desktop .navbar_items_desktop .nav_content .contact {
+    font-family: "Fraunces", serif;
+    background-color: white;
+    color: black;
+    padding: 0.8rem 1.7rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+  }
+  .transform_brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .stand_out {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar_mobile {
+    display: none;
+  }
+  .image_header_desktop {
+    display: block;
+    width: 100%;
+  }
+  .image_header_mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -46,14 +46,11 @@ body {
 //---------------------------NAVBAR
 
 .navbar_mobile {
-  padding: 20px;
   position: absolute;
   width: 100%;
   .navbar_items {
     @include flex(space-between, center);
-    .hamburger {
-      margin-right: 3rem;
-    }
+    padding: 20px;
   }
 }
 //NAVBAR-------------------------
@@ -63,24 +60,28 @@ body {
 // ---------------------HEADER
 .header {
   @include flexCenter();
-  .image_header {
+  .image_header_mobile {
     width: 100%;
   }
   .header_text {
     max-width: 31.5rem;
+    width: 100%;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     top: 2%;
+
     h1 {
-      max-width: 31.5rem;
-      font-size: 3.2rem;
+      max-width: 50rem;
+      width: 100%;
+      font-size: 2.7rem;
+      padding: 2rem;
       font-family: $fontFraunces;
       text-align: center;
       color: white;
       letter-spacing: 0.8rem;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
     img {
       max-width: 3.2rem;
@@ -320,5 +321,74 @@ body {
     img {
       width: 25px;
     }
+  }
+}
+
+// HIDE DESKTOP NAVBAR
+// ...................
+.navbar_desktop {
+  display: none;
+}
+.image_header_desktop {
+  display: none;
+}
+// DESKTOP............MEDIA QUERY
+//..........DESKTOP
+@media (min-width: 60em) {
+  // NAVBAR DESKTOP
+  .navbar_desktop {
+    display: block;
+    position: absolute;
+    width: 100%;
+
+    .navbar_items_desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+
+      .nav_content {
+        text-decoration: none;
+        font-family: $fontBarlow;
+        color: white;
+        display: flex;
+        gap: 3rem;
+        margin-right: 1rem;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+          font-family: $fontBarlow;
+          color: white;
+          font-weight: 600;
+        }
+        .contact {
+          font-family: $fontFraunces;
+          background-color: white;
+          color: black;
+          padding: 0.8rem 1.7rem;
+          border-radius: 2rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .transform_brand{
+    @include flexCenter();
+  }
+  .stand_out{
+    @include flexCenter();
+  }
+  
+  .navbar_mobile {
+    display: none;
+  }
+  .image_header_desktop {
+    display: block;
+    width: 100%;
+  }
+  .image_header_mobile {
+    display: none;
   }
 }
