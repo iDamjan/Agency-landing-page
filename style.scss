@@ -334,7 +334,7 @@ body {
 }
 // DESKTOP............MEDIA QUERY
 //..........DESKTOP
-@media (min-width: 60em) {
+@media (min-width: 65em) {
   // NAVBAR DESKTOP
   .navbar_desktop {
     display: block;
@@ -374,13 +374,52 @@ body {
       }
     }
   }
-  .transform_brand{
-    @include flexCenter();
+  .transform_brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .img_transform {
+      flex-basis: 100%;
+      width: 48%;
+      height: 100%;
+      order: 2;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        
+      }
+    }
+    .transform_text {
+      flex-basis: 100%;
+      padding: 10rem 10rem;
+      width: 48%;
+      order: 1; 
+     
+    }
   }
-  .stand_out{
-    @include flexCenter();
+  .stand_out {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .img_standOut{ 
+      flex-basis: 100%;
+      width: 48%;
+      height: 100%;
+    img {
+      width: 100%;
+        height: 100%;
+    }
   }
-  
+    .stand_out_text {
+      flex-basis: 100%;
+      width: 48%;
+      
+    }
+  }
+
   .navbar_mobile {
     display: none;
   }
