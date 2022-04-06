@@ -328,6 +328,33 @@ body {
   }
 }
 
+// Burger Menu open classs 
+.burgerMenu {
+  display: none;
+}
+.burgerMenuShow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  position: absolute;
+  background-color: white;
+  top: 1%;
+  width: 80%;
+  margin: 0 1.5rem;
+  z-index: 3;
+  border-radius: 2rem;
+}
+.burgerMenu a {
+  text-decoration: none;
+  font-family: $fontBarlow;
+  color: black;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+
 // HIDE DESKTOP NAVBAR
 // ...................
 .navbar_desktop {
@@ -339,11 +366,15 @@ body {
 // DESKTOP............MEDIA QUERY
 //..........DESKTOP
 @media (min-width: 65em) {
+  .burgerMenuShow{
+    display: none;
+  }
   // NAVBAR DESKTOP
   .navbar_desktop {
     display: block;
     position: absolute;
     width: 100%;
+    position: fixed;
 
     .navbar_items_desktop {
       display: flex;
@@ -485,4 +516,16 @@ body {
   .mobile_design {
     display: none;
   }
+
+  // NAVBAR ON SCROLL PROPERTIES CLASS
+
+  .onscroll{
+    background-color: white;
+    box-shadow: 0 3px 1rem rgba(0,0,0,.5);
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+  }
+
+
+
 }
