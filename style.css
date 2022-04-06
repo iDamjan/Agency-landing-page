@@ -77,7 +77,7 @@ body {
 }
 
 .main_content .transform_brand img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .main_content .transform_brand .transform_text {
@@ -137,7 +137,7 @@ body {
 }
 
 .main_content .stand_out img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .main_content .stand_out .stand_out_text {
@@ -196,13 +196,18 @@ body {
   opacity: 40%;
 }
 
+.main_content .desktop_photography,
+.main_content .desktop_design {
+  display: none;
+}
+
 .main_content .graphic_design {
   position: relative;
 }
 
 .main_content .graphic_design img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .main_content .graphic_design .graphic_design_text {
@@ -246,7 +251,7 @@ body {
 }
 
 .main_content .photography img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .main_content .photography .photography_text {
@@ -372,7 +377,7 @@ body {
 }
 
 .main_content .images_group img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .footer {
@@ -488,7 +493,7 @@ body {
     border-radius: 2rem;
     text-transform: uppercase;
   }
-  .transform_brand {
+  .main_content .transform_brand {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -503,29 +508,32 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .transform_brand .img_transform {
+  .main_content .transform_brand .transform_text {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    width: 48%;
-    height: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .transform_brand .img_transform img {
-    width: 100%;
-    height: 100%;
-  }
-  .transform_brand .transform_text {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    padding: 10rem 10rem;
+    padding: 0;
     width: 48%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .stand_out {
+  .main_content .transform_brand .transform_text p {
+    padding: 0 4rem;
+  }
+  .main_content .transform_brand .img_transform {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 50%;
+    height: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .main_content .transform_brand .img_transform img {
+    width: 100%;
+    height: 100%;
+  }
+  .main_content .stand_out {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -540,20 +548,74 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .stand_out .img_standOut {
+  .main_content .stand_out .img_standOut {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    width: 48%;
+    width: 50%;
     height: 100%;
   }
-  .stand_out .img_standOut img {
+  .main_content .stand_out .img_standOut img {
     width: 100%;
     height: 100%;
   }
-  .stand_out .stand_out_text {
+  .main_content .stand_out .stand_out_text {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     width: 48%;
+    padding: 0;
+  }
+  .main_content .stand_out .stand_out_text p {
+    padding: 0 4rem;
+  }
+  .main_content .brand {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (12fr)[2];
+        grid-template-columns: repeat(2, 12fr);
+  }
+  .main_content .brand .desktop_photography,
+  .main_content .brand .desktop_design {
+    display: block;
+  }
+  .main_content .brand .graphic_design {
+    grid: 6fr;
+  }
+  .main_content .brand .graphic_design img {
+    width: 100%;
+  }
+  .main_content .brand .graphic_design .graphic_design_text {
+    padding: 5rem 2rem;
+  }
+  .main_content .brand .photography {
+    grid: 6fr;
+  }
+  .main_content .brand .photography img {
+    width: 100%;
+  }
+  .main_content .client_testimonials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main_content .client_testimonials h2 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .main_content .client_testimonials div {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .main_content .client_testimonials div img {
+    width: 100%;
+  }
+  .main_content .images_group {
+    -ms-grid-columns: (12fr)[4];
+        grid-template-columns: repeat(4, 12fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
   .navbar_mobile {
     display: none;
@@ -563,6 +625,10 @@ body {
     width: 100%;
   }
   .image_header_mobile {
+    display: none;
+  }
+  .mobile_photography,
+  .mobile_design {
     display: none;
   }
 }
